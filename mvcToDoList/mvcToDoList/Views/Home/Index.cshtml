@@ -1,25 +1,156 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio - Agil</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
+    <!-- Font Awesome icons-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <header class="masthead d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">Welcome</h1>
+            <h3 class="mb-5"><em>A Blog Created by Aghazada Agil</em></h3>
+            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="content-section bg-light" id="about">
+        <div class="container px-4 px-lg-5 text-center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-10">
 
-<div class="jumbotron">
-    <h1>ToDos</h1>
-    <p class="lead">This is a simple MVC todo list app. </p>
-    @Html.ActionLink("Click here to start making Todos", "Index", "Todos", new { area = "" }, new { @class = "navbar-brand" })
-    <p><a href="http://nyeinchankyaw.me" class="btn btn-primary btn-sm">Go check out my page for more projects &raquo;</a></p>
-</div>
+                    <h2 class="h2 mb-4">About</h2>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2></h2>
-        <p>
-            A project by Nyein Chan Kyaw.
-        </p>
-     </div>   
-    <div class="col-md-4">
-        
+                    <p class="h3">
+                        Good Day! My name is Agil Aghazada. I study at Azerbaijan State Oil and Industry University,Information Security (English Section).
+                        I am currently III year student at this University. Until this time I participated many seminars, programmes, forums, coordinators of exams
+                        and Aviation section.
+                        I participated Erasmus+ programme in 2021 August.
+
+                        Also working now in Haydar Aliyev International Airport (GYD) as Coordinator of Departure of flights and as Head Volunteer in Baku City Circuit.
+                    </p>
+
+                    <p class="h3">
+                        Travelled Countries (10 countries):
+                        Azerbaijan, Turkey, Georgia, Ukraine, Hungary, Austria, Italy, Czech Republic, Bosnia and Hersogovina, Serbia.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="content-section bg-primary text-white text-center" id="services">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Services</h3>
+                <h2 class="mb-5">What We Offer</h2>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-plane"></i></span>
+                    <h4><strong>Reservation</strong></h4>
+                    <p class="text-faded mb-0">All airplane tickets from Azerbaijan.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="glyphicon-pencil"></i></span>
+                    <h4><strong>Visas</strong></h4>
+                    <p class="text-faded mb-0">Professional helps on Tourism and documents.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="glyphicon-screenshot"></i></span>
+                    <h4><strong>Favorited</strong></h4>
+                    <p class="text-faded mb-0">
+                        Millions of users
+                        <i class="fas fa-heart"></i>
+                        Liked Our Posts.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="glyphicon-search"></i></span>
+                    <h4><strong>Network</strong></h4>
+                    <p class="text-faded mb-0">Server Connection and Courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio-->
+    <section class="content-section" id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h2 class="mb-5">Recent Projects and Works</h2>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">AGHAZADA AGIL  CEO of the VEF LLC and CFO of the Donut Time Company. </div>
+                                <p class="mb-0">You can get more information from above.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="~/assets/img/Aqil (1).jpg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Erasmus+ Programme in Kyiv,Ukraine</div>
+                                <p class="mb-0">Strengthening the quality and the role of the Youth work in Europe.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="~/assets/img/Youth.jpg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Formula 1 Azerbaijan Grand Prix</div>
+                                <p class="mb-0">Service card. Which allows access to specific areas.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="~/assets/img/Formula1.jpeg" alt="..." />
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#!">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">A scene from the training sessions</div>
+                                <p class="mb-0">The flight departure team is under the leadership of Agil Aghazada.</p>  </div>
+                        </div>
+                        <img class="img-fluid" src="~/assets/img/Group.jpeg" alt="..." />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map-->
+    <div class="map" id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6965940688765!2d49.925689384397266!3d40.41557171701936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030633c3a2e7819%3A0x262fe183cc1635b!2zOSDDlnpiyZlraXN0YW4ga8O8w6cuLCBCYWvEsSAxMTE4LCBBemVyYmF5Y2Fu!5e0!3m2!1str!2s!4v1672056086384!5m2!1str!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br />
     </div>
-    <div class="col-md-4">
-       
-    </div>
-</div>
+    <!-- Footer-->
+</body>
+</html>

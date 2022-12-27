@@ -2,46 +2,63 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio - Agil</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/styles.css" rel="stylesheet" />
 
     @Styles.Render("~/Content/Site.css")
     @Styles.Render("~/Content/justified-nav.css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-                    <li>@Html.ActionLink("Todos", "Index", "Todos")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+<body id="page-top">
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item"><a href="/Home/Index#page-top">Home</a></li>
+            <li class="sidebar-nav-item"><a href="/Home/Index#about">About</a></li>
+            <li class="sidebar-nav-item"><a href="/Home/Index#services">Services</a></li>
+            <li class="sidebar-nav-item"><a href="/Home/Index#portfolio">Portfolio</a></li>
+            <li class="sidebar-nav-item"><a href="/Home/Contact">Contact</a></li>
+            <li class="sidebar-nav-item"><a href="/Todos/Index">ToDo List</a></li>
+        </ul>
+    </nav>
+    @RenderBody()
+    <footer class="footer text-center">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/agillaga/"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="https://github.com/agilaga"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Created by Aghazada Agil 2022</p>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - NyeinChanKyaw</p>
-        </footer>
-    </div>
-
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/Scripts/scripts.js"></script>
 </body>
 </html>
